@@ -1,6 +1,13 @@
 Use this as a reference when you run into unexpected errors in your terminal.
 
 
+## Error: /lib/ruby/2.3.0/socket.rb:205:in `bind': Address already in use - bind(2) for 127.0.0.1:9292 (Errno::EADDRINUSE)*
+1. Make sure no Terminal windows are running your server 
+2. Open up your Activity Monitor (you can do this by opening Spotlight with `CMD + Space` and searching for "Activtity Monitor")
+3. Search for "ruby" and that will reveal all of the running processes on your computer
+4. Make sure to stop all processes
+5. Go back to Terminal and run your ruby code again
+
 ## Error: Unable to run shotgun & bundle excec not working
 1. Gem uninstall rack
 2. Follow prompt to remove version of rack that doesn’t work with sinatra
